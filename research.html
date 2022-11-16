@@ -7,7 +7,7 @@ opengraph:
 
 <div class="container">
   <section>
-    <h2>Refereed Publications</h2>
+    <h2>Working Papers</h2>
     <ul>
     {% for paper in site.data.papers.papers %}
       <li>{% if paper.link %}<a href="{{ paper.link }}">{{ paper.title }}</a> {% else %} {{ paper.title }} {% endif %}
@@ -18,7 +18,7 @@ opengraph:
     </ul>
   </section>
   <section>
-    <h2>Whitepapers</h2>
+    <h2>Work in Progress</h2>
     <ul>
     {% for paper in site.data.papers.whitepapers %}
       <li>{% if paper.link %}<a href="{{ paper.link }}">{{ paper.title }}</a> {% else %} {{ paper.title }} {% endif %}
