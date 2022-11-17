@@ -94,7 +94,7 @@ section a:hover {
 /* Multiple section pages */
 section {
   font-family: 'Lato', sans-serif;
-  font-size: 20px; /* originally 14 */
+  font-size: 16px; /* originally 14 */
   text-size-adjust: 100%;
   font-weight: 400;
 }
