@@ -8,26 +8,12 @@ opengraph:
 <div class="container">
   <section>
     <h2>Working Papers</h2>
-    <a> Test </a>
-    <ul>
-    {% for paper in site.data.papers.papers %}
-      <li>{% if paper.link %}<a href="{{ paper.link }}">{{ paper.title }}</a> {% else %} {{ paper.title }} {% endif %}
-          {% if paper.coauthors %} (With {{ paper.coauthors }}.) {% endif %}
-          {% if paper.publishedat %} <span style="font-style: italic">{{ paper.publishedat }}.</span> {% endif %}
-          {% if paper.description %} {{ paper.description }} {% endif %}</li>
-    {% endfor %}
-    </ul>
+    <p> "What Drives Occupational Wage Inequality in the U.S.: Productivity or Rent Sharing?" </p>
   </section>
   <section>
     <h2>Work in Progress</h2>
     <ul>
-    {% for paper in site.data.papers.whitepapers %}
-      <li>{% if paper.link %}<a href="{{ paper.link }}">{{ paper.title }}</a> {% else %} {{ paper.title }} {% endif %}
-          {% if paper.publishedas %} As {{ paper.publishedas }}. {% endif %}
-          {% if paper.coauthors %} (With {{ paper.coauthors }}.) {% endif %}
-          {% if paper.publishedat %} <span style="font-style: italic">{{ paper.publishedat }}.</span> {% endif %}
-          {% if paper.description %} {{ paper.description }} {% endif %}</li>
-    {% endfor %}
+    <p> "Megafirms, Occupational Structure, and Wage Inequality" </p>
     </ul>
   </section>
 </div>
