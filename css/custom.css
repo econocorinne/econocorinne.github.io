@@ -87,7 +87,7 @@ section a {
 }
 
 section a:hover {
-  color: #000;
+  color: #4560F9; /* originally: #000 */
   font-weight: 700;
 }
 
