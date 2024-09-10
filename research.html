@@ -14,16 +14,18 @@ title: Corinne's Research Projects
       margin-top: 10px;
     }
     .button {
-      margin-left: 10px;
+      display: block;
+      margin-left: 0;
       padding: 0;
       background: none;
       border: none;
-      color: blue;
+      color: grey;
       text-decoration: underline;
       cursor: pointer;
+      margin-top: 5px;
     }
     .button:hover {
-      color: darkblue;
+      color: darkgrey;
     }
   </style>
   <script>
@@ -66,8 +68,8 @@ title: Corinne's Research Projects
       <p>
         "Gender Bias in the Labor Market: Evidence from Newspaper Job Ads" with 
         <a href="https://www.vikramdixit.net/">Vikram Dixit</a>
-        <button class="button" onclick="toggleAbstract()">Abstract</button>
       </p>
+      <button class="button" onclick="toggleAbstract()">Abstract</button>
       <p id="gender-abstract" class="abstract">
         This paper explores gender biases in job ads across multiple industries. It examines how job advertisements have historically been tailored towards one gender and the implications for labor market outcomes. Using newspaper data, we identify subtle patterns in job ads that suggest gender preferences in hiring.
       </p>    
