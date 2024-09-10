@@ -5,19 +5,72 @@ opengraph:
 title: Corinne's Research Projects
 ---
 
-<div class="container">
-  <section>
-    <h2>Working Papers</h2> 
-    <p> <a href="/papers/2022.10_occ_inequality.pdf">"What Drives Occupational Wage Inequality in the U.S.: Productivity or Rent Sharing?"</a> <p>
-    <p> "Trends in U.S.Wage Inequality: Revising the Revisionists. A Replication Study of Autor, Katz, and
-Kearney (The Review of Economics and Statistics, 2008)" </a> <a class="link" href="https://www.jcr-econ.org/trends-in-us-wage-inequality-revising-the-revisionists-replication/"><em>Journal of Comments and Replications in Economics, Vol 3(2024-4)</em></a>
-    
-  </section>
-  <hr>
-  <section>
-    <h2>Work in Progress</h2>
-    <p> "Aging Workforces and the Decline in the Large Firm Wage Premium" </p>
-    <p> "The Task Approach to Labor Markets in the Presence of Search Frictions" with <a href="https://nilslehr.com/">Nils Lehr</a> </p>
-    <p> "Gender Bias in the Labor Market: Evidence from Newspaper Job Ads" with <a href="https://www.vikramdixit.net/">Vikram Dixit</a> </p>    
-  </section>
-</div>
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    .abstract {
+      display: none;
+      margin-top: 10px;
+    }
+    .button {
+      margin-left: 10px;
+      padding: 5px 10px;
+      background-color: #007bff;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+    .button:hover {
+      background-color: #0056b3;
+    }
+  </style>
+  <script>
+    function toggleAbstract() {
+      var abstract = document.getElementById("gender-abstract");
+      if (abstract.style.display === "none") {
+        abstract.style.display = "block";
+      } else {
+        abstract.style.display = "none";
+      }
+    }
+  </script>
+</head>
+<body>
+  <div class="container">
+    <section>
+      <h2>Working Papers</h2> 
+      <p> 
+        <a href="/papers/2022.10_occ_inequality.pdf">
+          "What Drives Occupational Wage Inequality in the U.S.: Productivity or Rent Sharing?"
+        </a>
+      </p>
+      <p>
+        "Trends in U.S.Wage Inequality: Revising the Revisionists. A Replication Study of Autor, Katz, and Kearney (The Review of Economics and Statistics, 2008)"
+        <a class="link" href="https://www.jcr-econ.org/trends-in-us-wage-inequality-revising-the-revisionists-replication/">
+          <em>Journal of Comments and Replications in Economics, Vol 3(2024-4)</em>
+        </a>
+      </p>
+    </section>
+    <hr>
+    <section>
+      <h2>Work in Progress</h2>
+      <p> 
+        "Aging Workforces and the Decline in the Large Firm Wage Premium"
+      </p>
+      <p>
+        "The Task Approach to Labor Markets in the Presence of Search Frictions" with 
+        <a href="https://nilslehr.com/">Nils Lehr</a>
+      </p>
+      <p>
+        "Gender Bias in the Labor Market: Evidence from Newspaper Job Ads" with 
+        <a href="https://www.vikramdixit.net/">Vikram Dixit</a>
+        <button class="button" onclick="toggleAbstract()">Abstract</button>
+      </p>
+      <p id="gender-abstract" class="abstract">
+        This paper explores gender biases in job ads across multiple industries. It examines how job advertisements have historically been tailored towards one gender and the implications for labor market outcomes. Using newspaper data, we identify subtle patterns in job ads that suggest gender preferences in hiring.
+      </p>    
+    </section>
+  </div>
+</body>
+</html>
