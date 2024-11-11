@@ -1,25 +1,56 @@
+---
+layout: default
+active: papers
+opengraph:
+title: Corinne's Research Projects
+---
+
 <!DOCTYPE html>
 <html>
 <head>
   <style>
     .abstract {
-      display: block; /* Make abstract visible by default */
+      display: block;
       margin-top: 10px;
-      margin-bottom: 20px; /* Add vertical space after the abstract */
+      margin-bottom: 20px; /* Added vertical space after the abstract */
     }
     p {
       margin-bottom: 0; /* Remove space below the title */
+    }
+    .button {
+      display: block;
+      margin-left: 0;
+      padding: 0;
+      background: none;
+      border: none;
+      color: grey;
+      text-decoration: underline;
+      cursor: pointer;
+      margin-top: 0; /* Remove space between title and button */
+      margin-bottom: 20px; /* Add vertical space after the button */
+    }
+    .button:hover {
+      color: rgb(30,144,255); /* Change hover color to RGB (0, 0, 128) */
     }
     .navy-title {
       color: navy; /* Only apply navy color to the specific title */
     }
   </style>
+  <script>
+    function toggleAbstract(id) {
+      var abstract = document.getElementById(id);
+      if (abstract.style.display === "none") {
+        abstract.style.display = "block";
+      } else {
+        abstract.style.display = "none";
+      }
+    }
+  </script>
 </head>
 <body>
   <div class="container">
     <section>
       <h2>Working Papers</h2> 
-      
       <p> 
         <a href="/papers/S2025.pdf">
           <span class="navy-title">Macroeconomic Consequences of Gender Differences in Job Search (Job Market Paper)</span> 
@@ -44,7 +75,7 @@
         </a>
       </p>
       <p id="paper1-abstract" class="abstract">
-        This paper studies the 2015 European refugee crisis and its effects on electoral support for Germany's far-right party, Alternative für Deutschland (AfD). To identify the causal effects of refugee presence and address potential endogeneity of refugees' location choice, I exploit two unique features of the refugee placement process in Germany that serve as instrumental variables. The first approach uses German laws going back to 1949 that determine the allocation of refugees at the district level. The second approach exploits the fact that at the height of the crisis, many refugees were housed in military barracks that had been decommissioned prior to the refugee crisis. I find that a one percent increase in the presence of refugees within a district leads to a one percent decline in support for the AfD between the 2013 and 2017 federal elections. I probe potential mechanisms as to why this might be the case and find support for the contact hypothesis, namely that districts in which natives have more interactions with refugees see a larger decline in support for the AfD.
+        This paper studies the 2015 European refugee crisis and its effects on electoral support for Germany's far-right party, Alternative für Deutschland (AfD). To identify the causal effects of refugee presence and address potential endogeneity of refugee's location choice, I exploit two unique features of the refugee placement process in Germany that serve as instrumental variables. The first approach uses German laws going back to 1949 that determine the allocation of refugees at the district level. The second approach exploits the fact that at the height of the crisis, many refugees were housed in military barracks that had been decommissioned prior to the refugee crisis. I find that a one percent increase in the presence of refugees within a district leads to a one percent decline in support for the AfD between the 2013 and 2017 federal elections. I probe potential mechanisms as to why this might be the case and find support for the contact hypothesis, namely that districts in which natives have more interactions with refugees see a larger decline in support for the AfD.
       </p>
       
       <p>               
@@ -57,7 +88,35 @@
         This paper successfully replicates Autor et al. (2008) and extends their analysis through 2022. The extension to an additional 17 years of analysis underscores the original finding that rising wage inequality was not an episodic event of the 1980s. That being said, overall 90/10 inequality and the college wage premium have plateaued since 2005. Despite overall inequality plateauing, upper-tail 90/50 inequality has continued to increase since 1980 for both men and women. I also find that the composition-adjusted real wages of high school dropouts has caught up with high school graduates in the last decade. Between 2012 and 2022, high school dropouts saw larger real wage gains than any other education group. The combination of these findings is consistent with rising polarization in which employment and wages expand for high-wage and low-wage work.
       </p>
     </section>
-    <hr>    
+    <hr>
+    <section>
+      <h2>Work in Progress</h2>
+      <p> 
+        <span class="navy-title">Aging Workforces and the Decline in the Large Firm Wage Premium</span> 
+      </p>
+      <button class="button" onclick="toggleAbstract('paper3-abstract')">Abstract</button>
+      <p id="paper3-abstract" class="abstract">
+        I document trends in the large-firm wage premium across 26 European countries and the United States. To do so, I use Eurostat's Structure of Earnings Survey, a harmonized dataset with detailed information on employers and workers. For the U.S., I use two restricted microdatasets from the BLS: the Occupational Employment and Wage Statistics, and Quarterly Census of Employment and Wages. Based on a model of labor market frictions and differing workforce composition at firms, I quantify the role of an aging workforce to country differences in the large-firm wage premium.
+      </p>
+      
+      <p> 
+        <span class="navy-title">The Task Approach to Labor Markets in the Presence of Search Frictions</span> with 
+        <a href="https://nilslehr.com/">Nils Lehr</a>
+      </p>
+      <button class="button" onclick="toggleAbstract('paper4-abstract')">Abstract</button>
+      <p id="paper4-abstract" class="abstract">
+        We depart from the competitive labor market setting of the task model. To do so, we extend the framework of Helpman et al. (2010) by incorporating the task-based framework following Acemoglu and Autor (2011). Our model offers new insights into the effects of automation, task allocation, and search frictions for labor market outcomes. By embedding the task model in a non-competitive labor market setting, our model offers a richer understanding of the impact of technological change on labor demand, wage inequality, and overall wage structures.
+      </p>
+
+      <p>
+        <span class="navy-title">Gender Bias in the Labor Market: Evidence from Newspaper Job Ads</span> with 
+        <a href="https://www.vikramdixit.net/">Vikram Dixit</a>
+      </p>
+      <button class="button" onclick="toggleAbstract('paper5-abstract')">Abstract</button>
+      <p id="paper5-abstract" class="abstract">
+        We build a dataset of historical job advertisements from a U.S. newspaper of record that spans most of the 20th century. We measure gender bias at the occupation, skill, and firm level. We find that ads for jobs with task requirements that are people-facing are the most gendered. We interpret these facts through the lens of a task model of occupational sorting to quantify the effect of discrimination.
+      </p>    
+    </section>
   </div>
 </body>
 </html>
