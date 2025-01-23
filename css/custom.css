@@ -171,13 +171,13 @@ h2.huge {
 
 @media screen and (min-width: 574px) {
   .title-image {
-    max-width: 660px; /*max-width: 460px;*/
+    max-width: 560px; /*max-width: 460px;*/
   }
 }
 
 @media screen and (min-width: 768px) {
   .title-image {
-    max-width: 950px; /*max-width: 550px;*/
+    max-width: 750px; /*max-width: 550px;*/
   }
 }
 
