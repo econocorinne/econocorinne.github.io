@@ -164,7 +164,7 @@ h2.huge {
 .title-image {
   display: flex;
   justify-content: center;
-  max-width: 100%;
+  max-width: 1200px; /* ORIGINAL: max-width: 100%; Match the container width */ 
   margin: auto;
   padding-bottom: 20px;
 }
