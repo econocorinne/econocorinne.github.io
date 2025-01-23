@@ -11,12 +11,11 @@ body {
   font-family: 'Lato', sans-serif;
   font-size: 14px;
   text-size-adjust: 100%;
-  max-width: 1200px; /* Increased width */
 }
 
 @media (min-width: 768px) {
   .container {
-    max-width: 1200px; /* original: 730 */
+    max-width: 730px; 
   }
 }
 
@@ -165,7 +164,7 @@ h2.huge {
 .title-image {
   display: flex;
   justify-content: center;
-  max-width: 1200px; /* ORIGINAL: max-width: 100%; Match the container width */ 
+  max-width: 100%;  
   margin: auto;
   padding-bottom: 20px;
 }
