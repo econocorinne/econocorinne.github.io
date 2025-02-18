@@ -2,39 +2,65 @@
 layout: default
 active: papers
 opengraph:
-title: Teaching
+title: Women in Economics
 ---
 
 <!DOCTYPE html>
 <html>
 <head>
   <style>
-    .container {
-      max-width: 800px;
-      margin: 0 auto;
-      font-family: Arial, sans-serif;
-      line-height: 1.6;
-    }
-    .content {
-      margin-top: 20px;
-    }
-    h2 {
-      color: navy;
-      font-weight: bold;
-      margin-bottom: 20px;
+    .abstract {
+      display: block;
+      margin-top: 10px;
+      margin-bottom: 20px; /* Added vertical space after the abstract */
     }
     p {
-      margin-bottom: 10px;
+      margin-bottom: 10px; /* Remove space below the title */
     }
-    .weorg-link {
-      color: maroon;
-      text-decoration: none;
-      font-weight: bold;
-    }
-    .weorg-link:hover {
+    .button {
+      display: block;
+      margin-left: 0;
+      padding: 0;
+      background: none;
+      border: none;
+      color: grey;
       text-decoration: underline;
+      cursor: pointer;
+      margin-top: 0; /* Remove space between title and button */
+      margin-bottom: 20px; /* Add vertical space after the button */
+    }
+    .button:hover {
+      color: rgb(30,144,255); /* Change hover color to RGB (0, 0, 128) */
+    }
+    .navy-title {
+      color: navy; /* Only apply navy color to the specific title */
+      font-weight: bold; /* Make titles bold */
+    }
+    .maroon-link {
+      color: maroon; /* Set maroon color for Link to data */
+    }
+    h2 {
+      margin-bottom: 30px; /* Increase space after the main title */
+    }
+    h3 {
+      font-weight: bold; /* Make Header 3 bold */
+      margin-top: 30px; /* Increase space before each university section */
+    }
+    ul {
+      list-style-type: none;
+      padding-left: 0;
     }
   </style>
+  <script>
+    function toggleAbstract(id) {
+      var abstract = document.getElementById(id);
+      if (abstract.style.display === "none") {
+        abstract.style.display = "block";
+      } else {
+        abstract.style.display = "none";
+      }
+    }
+  </script>
 </head>
 <body>
   <div class="container">
