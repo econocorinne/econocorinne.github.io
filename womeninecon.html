@@ -9,79 +9,40 @@ title: Teaching
 <html>
 <head>
   <style>
-    .abstract {
-      display: block;
-      margin-top: 10px;
-      margin-bottom: 20px; /* Added vertical space after the abstract */
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
     }
-    p {
-      margin-bottom: 10px; /* Remove space below the title */
-    }
-    .button {
-      display: block;
-      margin-left: 0;
-      padding: 0;
-      background: none;
-      border: none;
-      color: grey;
-      text-decoration: underline;
-      cursor: pointer;
-      margin-top: 0; /* Remove space between title and button */
-      margin-bottom: 20px; /* Add vertical space after the button */
-    }
-    .button:hover {
-      color: rgb(30,144,255); /* Change hover color to RGB (0, 0, 128) */
-    }
-    .navy-title {
-      color: navy; /* Only apply navy color to the specific title */
-      font-weight: bold; /* Make titles bold */
-    }
-    .maroon-link {
-      color: maroon; /* Set maroon color for Link to data */
+    .content {
+      margin-top: 20px;
     }
     h2 {
-      margin-bottom: 30px; /* Increase space after the main title */
+      color: navy;
+      font-weight: bold;
+      margin-bottom: 20px;
     }
-    h3 {
-      font-weight: bold; /* Make Header 3 bold */
-      margin-top: 30px; /* Increase space before each university section */
+    p {
+      margin-bottom: 10px;
     }
-    ul {
-      list-style-type: none;
-      padding-left: 0;
+    .weorg-link {
+      color: maroon;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .weorg-link:hover {
+      text-decoration: underline;
     }
   </style>
-  <script>
-    function toggleAbstract(id) {
-      var abstract = document.getElementById(id);
-      if (abstract.style.display === "none") {
-        abstract.style.display = "block";
-      } else {
-        abstract.style.display = "none";
-      }
-    }
-  </script>
 </head>
 <body>
   <div class="container">
-    <section>
-      <h2>Teaching Assistant Experience</h2> 
+    <section class="content">
+      <h2>Mentorship and Teaching</h2> 
 
-      <h3>Boston University</h3> 
-      <ul>
-        <li>Introductory Macroeconomic Analysis (Undergraduate)</li>
-        <li>Intermediate Macroeconomics (Undergraduate)</li>
-        <li>Intermediate Mathematical Macroeconomics (Undergraduate)</li>
-        <li>Entrepreneurial Economics (MBA)</li>
-        <li>International Finance (Master’s)</li>
-        <li>Introduction to Economic Dynamics (Master’s)</li>
-      </ul>
-
-      <h3>Harvard University</h3> 
-      <ul>
-        <li>Personal Finance (Undergraduate)</li>
-        <li>Labor Economics and Labor Market Institutions (PhD field course)</li>
-      </ul>
+      <p>I take the role and responsibility of mentorship seriously. As a graduate student, I served as co-Chair of the <a href="https://www.bostonugwe.com/" class="weorg-link" target="_blank">BU Women & Nonbinary People in Economics</a> at Boston University. Our main activity is a mentorship program that matches faculty to a small group of students. Each group meets regularly throughout the year, giving female and underrepresented students an opportunity to receive professional guidance and feedback on navigating graduate school and the job market. We also organize panels targeted to undergraduate students to demystify the process of applying to graduate school.</p>
+      
     </section>
   </div>
 </body>
