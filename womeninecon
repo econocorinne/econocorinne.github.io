@@ -1,0 +1,88 @@
+---
+layout: default
+active: papers
+opengraph:
+title: Teaching
+---
+
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    .abstract {
+      display: block;
+      margin-top: 10px;
+      margin-bottom: 20px; /* Added vertical space after the abstract */
+    }
+    p {
+      margin-bottom: 10px; /* Remove space below the title */
+    }
+    .button {
+      display: block;
+      margin-left: 0;
+      padding: 0;
+      background: none;
+      border: none;
+      color: grey;
+      text-decoration: underline;
+      cursor: pointer;
+      margin-top: 0; /* Remove space between title and button */
+      margin-bottom: 20px; /* Add vertical space after the button */
+    }
+    .button:hover {
+      color: rgb(30,144,255); /* Change hover color to RGB (0, 0, 128) */
+    }
+    .navy-title {
+      color: navy; /* Only apply navy color to the specific title */
+      font-weight: bold; /* Make titles bold */
+    }
+    .maroon-link {
+      color: maroon; /* Set maroon color for Link to data */
+    }
+    h2 {
+      margin-bottom: 30px; /* Increase space after the main title */
+    }
+    h3 {
+      font-weight: bold; /* Make Header 3 bold */
+      margin-top: 30px; /* Increase space before each university section */
+    }
+    ul {
+      list-style-type: none;
+      padding-left: 0;
+    }
+  </style>
+  <script>
+    function toggleAbstract(id) {
+      var abstract = document.getElementById(id);
+      if (abstract.style.display === "none") {
+        abstract.style.display = "block";
+      } else {
+        abstract.style.display = "none";
+      }
+    }
+  </script>
+</head>
+<body>
+  <div class="container">
+    <section>
+      <h2>Teaching Assistant Experience</h2> 
+
+      <h3>Boston University</h3> 
+      <ul>
+        <li>Introductory Macroeconomic Analysis (Undergraduate)</li>
+        <li>Intermediate Macroeconomics (Undergraduate)</li>
+        <li>Intermediate Mathematical Macroeconomics (Undergraduate)</li>
+        <li>Entrepreneurial Economics (MBA)</li>
+        <li>International Finance (Master’s)</li>
+        <li>Introduction to Economic Dynamics (Master’s)</li>
+      </ul>
+
+      <h3>Harvard University</h3> 
+      <ul>
+        <li>Personal Finance (Undergraduate)</li>
+        <li>Labor Economics and Labor Market Institutions (PhD field course)</li>
+      </ul>
+    </section>
+  </div>
+</body>
+</html>
