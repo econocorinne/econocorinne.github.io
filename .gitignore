@@ -1,0 +1,26 @@
+# Jekyll build output
+_site/
+.sass-cache/
+.jekyll-metadata
+.jekyll-cache/
+
+# Dependencies
+node_modules/
+vendor/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editor files
+.*.swp
+*~
+.vscode/
+.idea/
+
+# Ruby
+.byebug_history
+.bundle/
+
+# Misc
+.publish
