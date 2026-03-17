@@ -1,9 +1,24 @@
 Working Papers:
+  - title: "Amenities, Search Frictions, and Gender Differences in Labor Markets"
+    pdf: "/papers/Corinne_gender.pdf"
+    image: "/assets/images/gender_paper.png"
   - title: "What Drives Occupational Wage Inequality in the U.S.: Productivity or Rent Sharing?"
+    pdf: "/papers/Occupational_wage_growth.pdf"
+    image: "/assets/images/occupations_paper.png"
+
+Publications:
+  - title: "Trends in U.S. Wage Inequality: Revising the Revisionists. A Replication Study of Autor, Katz, and Kearney (The Review of Economics and Statistics, 2008)"
+    journal: "Journal of Comments and Replications in Economics, 2024, Vol 3(2024-4)"
+    url: "https://www.jcr-econ.org/trends-in-us-wage-inequality-revising-the-revisionists-replication/"
+    image: "/assets/images/AKK_paper.png"
+  - title: "Climate risk and IMF surveillance policy: a baseline analysis"
+    coauthors: "with Luma Ramos, Kevin Gallagher, Irene Monasterolo"
+    journal: "Climate Policy, 2021, Vol 22(3): 371-388"
+    url: "https://www.tandfonline.com/doi/full/10.1080/14693062.2021.2016363"
+    image: "/assets/images/IMF_paper.png"
 
 Work in Progress:
+  - title: "Aging Workforces and the Decline in the Large Firm Wage Premium"
+  - title: "Declining Search Frictions and the Gender Wage Gap"
   - title: "Gender Bias in the Labor Market: Evidence from Newspaper Job Ads"
-  - title: "Electoral Effects of the 2015 Syrian Refugee Wage in Germany"
-  - title: "An Aging Workforce and the Decline in the Large Firm Wage Premium"
-  - title: "Differences in Job Search Behavior and Implications for the Gender Wage Gap"
-  - title: "The Task Approach to Labor Markets in the Presence of Search Frictions"
+    coauthors: "with Vikram Dixit"

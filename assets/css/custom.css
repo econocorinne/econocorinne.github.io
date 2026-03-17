@@ -107,7 +107,7 @@ hr {
 /* Jumbotron */
 .jumbotron {
   background-color: transparent;
-  background-image: url("/images/farm.jpg");
+  background-image: url("/assets/images/farm.jpg");
   background-size: auto 100%;
   background-position: center;
   min-height: 100%;
