@@ -44,6 +44,36 @@ title: Corinne's Research Projects
     font-style: italic;
     margin-bottom: 8px;
   }
+  .image-wrapper {
+    position: relative;
+    width: 200px;
+    min-width: 200px;
+    margin-right: 10px;
+  }
+  .image-wrapper img {
+    width: 200px;
+    height: auto;
+  }
+  .split-left, .split-right {
+    transition: transform 0.5s ease-out, filter 0.5s ease-out;
+  }
+  .split-left {
+    clip-path: inset(0 50% 0 0);
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  .split-right {
+    clip-path: inset(0 0 0 50%);
+  }
+  .image-wrapper.active .split-left {
+    transform: translateX(-8px);
+    filter: brightness(1.05);
+  }
+  .image-wrapper.active .split-right {
+    transform: translateX(8px);
+    filter: brightness(1.05);
+  }
   </style>
   <script>
     function toggleAbstract(id) {
@@ -63,9 +93,12 @@ title: Corinne's Research Projects
      
       
         <div style="display: flex; align-items: flex-start; margin-bottom: 10px;">
-          <img src="/assets/images/gender_paper.png" alt="Paper Icon" style="width: 200px; height: auto; margin-right: 10px;">
+          <div class="image-wrapper" id="gender-paper-img">
+            <img src="/assets/images/gender_paper.png" alt="Paper Icon" class="split-left">
+            <img src="/assets/images/gender_paper.png" alt="Paper Icon" class="split-right">
+          </div>
           <div>
-            <a href="/papers/Corinne_gender.pdf">
+            <a href="/papers/Corinne_gender.pdf" id="gender-paper-title">
               <span class="navy-title">Amenities, Search Frictions, and Gender Differences in Labor Markets</span>
             </a>
             <p class="presentations">
@@ -161,5 +194,19 @@ title: Corinne's Research Projects
            
     </section>
   </div>
+<script>
+  (function() {
+    var title = document.getElementById('gender-paper-title');
+    var wrapper = document.getElementById('gender-paper-img');
+
+    title.addEventListener('mouseenter', function() {
+      wrapper.classList.add('active');
+    });
+
+    title.addEventListener('mouseleave', function() {
+      wrapper.classList.remove('active');
+    });
+  })();
+</script>
 </body>
 </html>
